@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+}
+.about-section{
+    width: 100%;
+    background: #f1f1f1;
+    padding: 40px 0;
+}
+.inner-width{
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 0 20px;
+    margin: auto;
+}
+.about-section h1{
+    text-align: center;
+}
+.border{
+    width: 100px;
+    height: 3px;
+    background: #e74c3c;
+    margin: 40px auto;
+}
+.about-section-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-section-col{
+    flex: 50%;
+}
+.about{
+    padding-right: 30px;
+}
+.about p{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.about a{
+    display: inline-block;
+    color: #e74c3c;
+    text-decoration: none;
+    border: 2px solid #e74c3c;
+    border-radius: 26px; 
+    padding: 8px 40px;
+    transition: 0.4s linear;
+    margin-bottom: 20px;
+}
+.about a:hover{
+    color: #fff;
+    background: #e74c3c;
+}
+
+.skills{
+    padding-left: 0;
+}
+.skill{
+    margin-bottom: 20px;
+}
+.progress{
+    width: 500px;
+    height: 12px;
+    background: #ddd;
+    border-radius: 12px;
+}
+.progress-bar{
+    height: 12px;
+    background: #e74c3c;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.p1{
+    width: 90%;
+}
+.p2{
+    width: 70%;
+}
+.p3{
+    width: 80%;
+}
+
+.progress-bar span{
+    float: right;
+    height: 2px;
+    margin-right: 6px;
+    line-height: 13px;
+    color: #fff;
+    font-size: 12px;
+}
+
+@media screen and (max-width:700px){
+    .about-section-col{
+        flex: 100%;
+        margin: 10px 0;
+    }
+    .about,.skills{
+        padding: 0;
+    }
+    .about{
+        text-align: center;
+    }
+}
